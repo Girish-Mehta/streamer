@@ -1,0 +1,76 @@
+.btn {
+    background-color: white;
+    color: black;
+    margin: 0 1rem;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+}
+
+.stream {
+    position: relative;
+}
+
+.chat {
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+.fullscreen {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+
+    .stream {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 80%;
+        background-color: black;
+    }
+    
+    .video {
+        width: 100%;
+    }
+
+    .chat {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: black;
+        color: white;
+        height: 100vh;
+        width: 20%;
+    }
+    .showControls {
+        background-color: black;
+        color: white;
+    }
+    .controls {
+        left: 35%;
+        .btn {
+            background-color: rgb(0 0 0 / 52%);
+            color: white;
+            padding: 2px 10px;
+        }
+    }
+
+    .chatter {
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 1rem;
+        width: 100%;
+        
+        input {
+            width: 80%;
+        }
+    }
+}
